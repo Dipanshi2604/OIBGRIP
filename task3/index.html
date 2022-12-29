@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-dark mb-3">
+       <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar justify-content-between">
+                        <a class="navbar-brand">Todo List</a>
+                        <form class="form-inline">
+                            <input type="search" class="form-control mr-sm-2" placeholder="search" id="searchtextbox">
+                        </form>
+                    </nav>
+                </div>
+            </div>
+       </div>
+    </header>
+    <section class="todo-outer">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-sm-12 col-md-8">
+                    <h1>Welcome to our Todo List Application</h1>
+                    <div class="todo-inner">
+                        <div class="form-row">
+                            <div class="col-8 mr-sm-2">
+                                <input type="text" class="form-control" placeholder="Enter Your Task" id="addtaskinput">
+                                <input type="hidden" id="saveindex" value="0">
+                            </div>
+                            <button class="btn btn-success mr-sm-2" id="addtaskbtn">Add Task</button>
+                            <button class="btn btn-success mr-sm-2" id="savetaskbtn" style="display:none;" >Save Task</button>
+                            <button class="btn btn-danger" id="deleteallbtn">Delete All</button>
+                        </div>
+                        <div class="to-do-output">
+                            <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+                                <!-- <tbody>
+                                     <td>
+                                            <button type="button"  class="text-success" id="0">
+                                                <i class="fa fa-check-square-o"></i>Completed
+                                            </button>
+                                        </td>
+                                </tbody> -->
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
